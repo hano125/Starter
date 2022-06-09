@@ -36,3 +36,13 @@ Route::group(['namespace'=>'Front'],function(){
 Route::get("Login",function() {return "must be login"; } )->name("login");
 
 Route::get("showname","Front\adminController@showName");
+
+// here i use or craate view 
+
+Route::get("index","Front\userController@getIndex");
+
+//passsing data from route to view but this method is not good becouse if i use long line
+
+//1- variable
+
+    Route::get("getname","Front\userController@getIndex");
