@@ -46,3 +46,9 @@ Route::get("index","Front\userController@getIndex");
 //1- variable
 
     Route::get("getname","Front\userController@getIndex");
+
+    //view page
+
+    Route::get("landing",function(){
+        return view("landing");
+    });
